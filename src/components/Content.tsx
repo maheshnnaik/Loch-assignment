@@ -1,6 +1,7 @@
 import React from "react";
 import Cohorts from '../images/Cohorts.png';
 import Eye from '../images/Eye.svg';
+import VectorIcon from '../images/Vector.svg';
 import './Content.css';
 import { Card } from "./Card";
 
@@ -20,8 +21,22 @@ export const Content = () => {
 			<div className="middle-container">
 				<img src={Cohorts} alt="Cohort" className="cohorts" />
 				<img src={Eye} alt="eye" className="eye" />
-				<p className="m-text1">Watch what the whales are doing</p>
-				<p className="m-text2">All whales are not equal. Know exactly what the whales impacting YOUR portfolio are doing.</p>
+				<div className="m-text">
+					<p className="m-text1">Watch what the whales are doing</p>
+					<p className="m-text2">All whales are not equal. Know exactly what the whales impacting YOUR portfolio are doing.</p>
+				</div>
+			</div>
+			<div className="bottom-container">
+				<p className="m-text3">Testimonials</p>
+				<div className="h-line"></div>
+				<img src={VectorIcon} alt="vector" />
+				<div className="b-card-container">
+					<div className="testimonials">
+						<div className="testimonials1"></div>
+						<div className="testimonials2"></div>
+						<div className="testimonials3"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	)
