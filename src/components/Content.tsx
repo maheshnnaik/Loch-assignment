@@ -1,4 +1,6 @@
 import React from "react";
+import Cohorts from '../images/Cohorts.png';
+import Eye from '../images/Eye.svg';
 import './Content.css';
 import { Card } from "./Card";
 
@@ -16,7 +18,10 @@ export const Content = () => {
 				</div>
 			</div>
 			<div className="middle-container">
-
+				<img src={Cohorts} alt="Cohort" className="cohorts" />
+				<img src={Eye} alt="eye" className="eye" />
+				<p className="m-text1">Watch what the whales are doing</p>
+				<p className="m-text2">All whales are not equal. Know exactly what the whales impacting YOUR portfolio are doing.</p>
 			</div>
 		</div>
 	)

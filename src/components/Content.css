@@ -1,6 +1,7 @@
 .content {
-	background: url('../images/bluela.png');
+	background: url('../images/bluela.png') no-repeat;
 	width: 60rem;
+	height: 1280px;
 }
 
 .top-container {
@@ -9,8 +10,8 @@
 
 .bell {
 	background: url('../images/Bell.png');
-	width: 32px;
-	height: 32px;
+	width: 2rem;
+	height: 2rem;
 }
 
 .group1 {
@@ -22,7 +23,7 @@
 }
 
 .top-text1 {
-	width: 19rem;
+	width: 19.5625rem;
     margin: 0;
     padding: 1rem 0;
 	color: var(--Background---F2F2F2, #F2F2F2);
@@ -42,7 +43,7 @@
 }
 
 .top-text2 {
-	width: 19.125rem;
+	width: 20.125rem;
 	color: var(--Background---F2F2F2, #F2F2F2);
 	font-size: 1rem;
 	font-style: normal;
@@ -60,6 +61,81 @@
 	position: relative;
 	top: 2.75rem;
 	left: 4rem;
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.92) 27.6%, #FFF 53.13%, rgba(255, 255, 255, 0.67) 81.77%, rgba(255, 255, 255, 0.00) 100%);
+	/* background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.92) 27.6%, #FFF 53.13%, rgba(255, 255, 255, 0.67) 81.77%, rgba(255, 255, 255, 0.00) 100%); */
 	overflow: hidden;
+} 
+
+.middle-container {
+	width: 42.375rem;
+	height: 19.125rem;
+	flex-shrink: 0;
+	position: absolute;
+	left: 3.75rem;
+	top: 25.6rem;
+	display: flex;
+}
+
+.cohorts {
+	width: 20.9375rem;
+	height: 19.125rem;
+	flex-shrink: 0;
+	background: no-repeat;
+	border-radius: 0.75rem;
+	/* border: 1.5px solid rgba(255, 255, 255, 0.68); */
+	/* background: lightgray 50% / cover no-repeat; */
+
+	/* Active Shadow */
+	box-shadow: 0px 14px 64px -4px rgba(24, 39, 75, 0.12), 0px 8px 22px -6px rgba(24, 39, 75, 0.12);
+}
+
+.eye {
+	width: 2rem;
+	height: 2rem;
+	flex-shrink: 0;
+	position: absolute;
+	top: 1.06rem;
+	right: 3.87rem;
+}
+
+.m-text1 {
+	width: 19.0625rem;
+	height: 4.625rem;
+	color: var(--Background---F2F2F2, #F2F2F2);
+	text-align: right;
+
+	/* Heading 4 */
+	font-family: Inter;
+	font-size: 1.9375rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%; /* 2.325rem */
+
+	position: absolute;
+	top: 4.06rem;
+	right: 3.88rem;
+	margin: 0;
+	word-wrap: break-word;
+	text-align: right;
+}
+
+.m-text2 {
+	width: 19.0625rem;
+	height: 3.5625rem;
+	color: var(--Background---F2F2F2, #F2F2F2);
+	text-align: right;
+
+	/* Body */
+	font-family: Inter;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%; /* 1.2rem */
+	opacity: 0.7;
+
+	position: absolute;
+	top: 9.68rem;
+	right: 3.87rem;
+	margin: 0;
+	word-wrap: break-word;
+	text-align: right;
 }
