@@ -15,22 +15,98 @@
 }
 
 .card1 {
-	width: 189.7px;
-	height: 171.5px;
+	width: 11.85625rem;
+	height: 10.71875rem;
 	position: relative;
-	/* top: 92px;
-	left: 46px; */
 	display: flex;
-	border-radius: 8.4px;
-	gap: 8.4px;
 	background-color: white;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 27.5%, rgba(22, 93, 255, 0.162) 157.71%);
-	box-shadow: 0px 0.699999988079071px 0.699999988079071px 0px #0000000A;
+	border-radius: 0.525rem;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 27.5%, rgba(22, 93, 255, 0.16) 157.71%), #FFF;
+	box-shadow: 0px 0.7px 0.7px 0px rgba(0, 0, 0, 0.04), 0px 2.8px 7px 0px rgba(0, 0, 0, 0.04);
+}
+
+.card1-bell {
+	background: no-repeat;
+	width: 1.75rem;
+	height: 1.75rem;
+	flex-shrink: 0;
+	position: relative;
+	top: 0.88rem;
+	left: 0.87rem;
+}
+
+#save-text {
+	color: var(--grey-900, #19191A);
+	text-align: right;
+	font-family: 'Inter';
+	font-size: 0.56875rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 120%; /* 0.6825rem */
+	width: 1.375rem;
+	height: 0.675rem;
+	position: absolute;
+	top: 0.88rem;
+	right: 0.86rem;
+	text-align: right;
+	margin: 0;
+}
+
+#notify-text {
+	color: var(--grey-900, #19191A);
+	font-family: 'Inter';
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%; /* 1.05rem */
+	width: 8.0625rem;
+	height: 3.1875rem;
+	position: absolute;
+	top: 3.5rem;
+	left: 0.87rem;
+	/* font-size: 14px;
+	font-weight: 500;
+	line-height: 17px;
+	letter-spacing: 0px; */
+	text-align: left;
+	/* color: #19191A; */
+	margin: 0;
+}
+
+
+.input-field {
+	display: flex;
+	width: 10.10625rem;
+	height: 2.1875rem;
+	position: relative;
+	top: 7.66rem;
+	right: 1.1rem;
+	align-items: center;
+	gap: 0.4375rem;
+}
+
+.input-field input {
+	padding: 0.52rem 0.1rem;
+	flex-shrink: 0;
+	width: 10.10625rem;
+	height: 2.1875rem;
+	color: var(--grey-900, #19191A);
+	border-radius: 0.35rem;
+	border: 0.7px solid var(--neutral-300, #D4D4D4);
+	background: #FFF;
+	/* Caption */
+	font-family: Inter;
+	font-size: 0.8125rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%; /* 0.975rem */
 }
 
 .card2 {
 	width: 11.85625rem;
 	height: 10.71875rem;
+	position: relative;
+	flex-shrink: 0;
 	border-radius: 0.525rem;
 	background: #FFF;
 	box-shadow: 0px 0.7px 0.7px 0px rgba(0, 0, 0, 0.04), 0px 2.8px 7px 0px rgba(0, 0, 0, 0.04);
@@ -38,79 +114,21 @@
 	/* background-color: white; */
 }
 
-.card1-bell {
-	background: url('../images/Bell1.png') no-repeat;
-	width: 28px;
-	height: 28px;
-	position: relative;
-	top: 14px;
-	left: 14px;
-	padding: 2.33px 25px 2.34px 5px;
-}
-
-#save-text {
-	width: 22px;
-	height: 11px;
-	position: relative;
-	top: 14px;
-	left: 121px;
-	/* font-family: Inter; */
-	font-size: 9px;
-	font-weight: 600;
-	line-height: 11px;
-	letter-spacing: 0px;
-	text-align: right;
-	color: #19191A;
-}
-
-#notify-text {
-	width: 129px;
-	height: 51px;
-	position: relative;
-	top: 50px;
-	right: 50px;
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 17px;
-	letter-spacing: 0px;
-	text-align: left;
-	color: #19191A;
-	margin: 0;
-}
-
-.notify-text2-container {
-	display: flex;
-	width: 100%;
-	height: fit-content;
-	position: relative;
-	top: 6.08rem;
-	width: 9.25rem;
-	height: 1.625rem;
-	right: 1.73rem;
-}
-
 #notify-text2 {
 	color: var(--grey-900, #19191A);
+	font-family: 'Inter';
 	font-size: 0.7rem;
 	font-style: normal;
 	font-weight: 500;
+	line-height: 120%; /* 0.84rem */
 	text-align: left;
 	margin: 0;
 	width: 9.25rem;
+	height: 1.625rem;
+	position: absolute;
+	top: 6.08rem;
+	left: 0.87rem;
 }
-
-.card1 input {
-	width: 161.7px;
-	height: 30px;
-	position: relative;
-	top: 122.5px;
-	right: 154px;
-	padding: 4px 8.2px 4px 8.2px;
-	border-radius: 5.6px;
-	border: 0.7px solid #D4D4D4;
-}
-
-
 
 .dropdown {
 	display: inline-flex;
@@ -120,9 +138,9 @@
 	gap: 0.175rem;
 	border-radius: 0.175rem;
 	background: var(--grey-50, rgba(229, 229, 230, 0.50));
-	position: relative;
+	position: absolute;
 	top: 8.62rem;
-	right: 11rem;
+	left: 0.87rem;
 }
 
 select {
@@ -143,26 +161,37 @@ select {
 	left: 0.26rem;
 }
 
-.card2-bar-chart {
-	background: url('../images/bar-chart-2.png') no-repeat;
-	width: 28px;
-	height: 28px;
-	position: relative;
+.bar-chart {
+	background: no-repeat;
+	width: 1.75rem;
+	height: 1.75rem;
+	flex-shrink: 0;
+	position: absolute;
 	top: 0.88rem;
 	left: 0.88rem;
-	/* padding: 2.33px 25px 2.34px 5px; */
 }
 
 #checkbox {
-	background: url('../images/Checkmark.png') no-repeat;
-	/* display: flex; */
+	display: flex;
 	width: 0.875rem;
 	height: 0.875rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	flex-shrink: 0;
 	border-radius: 0.2625rem;
 	position: relative;
 	top: 0.88rem;
-	left: 8.11rem;
+	left: 10.1rem;
+	border-radius: 0.2625rem;
+	background: var(--blue-blue, #0071E3);
+}
+
+#checkbox img {
+	background: no-repeat;
+	width: 0.4375rem;
+	height: 0.416rem;
+	flex-shrink: 0;
 }
 
 .card3 {
@@ -176,38 +205,13 @@ select {
 	box-shadow: 0px 0.7px 0.7px 0px rgba(0, 0, 0, 0.04), 0px 2.8px 7px 0px rgba(0, 0, 0, 0.04);
 }
 
-.div-header {
-	display: inline-flex;
-    position: relative;
-    top: 0.88rem;
-    width: 100%;
-    padding: 0 0.875rem;
-    gap: 7.48rem;
-}
-
 .clock {
 	background: no-repeat;
 	width: 1.75rem;
 	height: 1.75rem;
-}
-
-#checkbox2 {
-	background: url('../images/Checkmark.png') no-repeat;
-	/* display: flex; */
-	width: 0.875rem;
-	height: 0.875rem;
-	flex-shrink: 0;
-	border-radius: 0.2625rem;
-	/* position: relative;
-	top: 0.88rem;
-	left: 8.11rem; */
-}
-
-.notify-text3-container {
-	width: 100%;
 	position: absolute;
-	top: 5.08rem;
-	left: 0.875rem;
+	top: 0.88rem;
+	left: 0.88rem;
 }
 
 #notify-text3 {
@@ -219,18 +223,14 @@ select {
 	line-height: 120%; /* 0.84rem */
 	margin: 0;
 	text-align: left;
+	position: absolute;
+	top: 5.08rem;
+	left: 0.875rem;
 }
 
 .dropdown2 {
 	position: absolute;
 	top: 7.26rem;
-	left: 0.875rem;
-}
-
-.notify-text4-container {
-	width: 100%;
-	position: absolute;
-	top: 9.01rem;
 	left: 0.875rem;
 }
 
@@ -243,6 +243,9 @@ select {
 	line-height: 120%; /* 0.84rem */
 	margin: 0;
 	text-align: left;
+	position: absolute;
+	top: 9.01rem;
+	left: 0.875rem;
 }
 
 @keyframes slide {
