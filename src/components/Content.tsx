@@ -4,6 +4,7 @@ import Eye from '../images/Eye.svg';
 import VectorIcon from '../images/Vector.svg';
 import './Content.css';
 import { Card } from "./Card";
+import { Testimonials } from "./Testimonials";
 
 export const Content = () => {
 	return (
@@ -27,14 +28,16 @@ export const Content = () => {
 				</div>
 			</div>
 			<div className="bottom-container">
-				<p className="m-text3">Testimonials</p>
-				<div className="h-line"></div>
-				<img src={VectorIcon} alt="vector" />
-				<div className="b-card-container">
-					<div className="testimonials">
-						<div className="testimonials1"></div>
-						<div className="testimonials2"></div>
-						<div className="testimonials3"></div>
+				<div className="t-header">
+					<p className="m-text3">Testimonials</p>
+					<div className="h-line"></div>
+				</div>
+				<div className="b-container">
+					<div className="b-img">
+						<img src={VectorIcon} alt="vector" />
+					</div>
+					<div className="b-card-container">
+						<Testimonials />
 					</div>
 				</div>
 			</div>

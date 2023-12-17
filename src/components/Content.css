@@ -1,7 +1,7 @@
 .content {
 	background: url('../images/bluela.png') no-repeat;
 	width: 60rem;
-	height: 1280px;
+	height: 64rem;
 }
 
 .top-container {
@@ -20,6 +20,8 @@
     position: relative;
     top: 5.38rem;
     left: 3.75rem;
+	display: flex;
+	flex-direction: column;
 }
 
 .top-text1 {
@@ -55,12 +57,12 @@
 }
 
 .group2 {
-	width: 23.4rem;
+	width: calc(100% - 25.05rem);
 	height: 19rem;
 	flex-shrink: 0;
 	position: relative;
 	top: 2.75rem;
-	left: 4rem;
+	left: 5rem;
 	/* background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.92) 27.6%, #FFF 53.13%, rgba(255, 255, 255, 0.67) 81.77%, rgba(255, 255, 255, 0.00) 100%); */
 	overflow: hidden;
 } 
@@ -149,13 +151,14 @@
 }
 
 .bottom-container {
-	width: 100%;
-	position: absolute;
-	top: 46.725rem;
+	/* width: 100%; */
+	position: relative;
+	display: flex;
+	top: 27.725rem;
 }
 
 .m-text3 {
-	width: 25rem;
+	width: 85%;
 	color: var(--Background---F2F2F2, #F2F2F2);
 	text-align: right;
 
@@ -166,75 +169,49 @@
 	line-height: 120%; /* 1.875rem */
 
 	position: absolute;
-	left: 21.125rem;
-	/* top: 20.0625rem; */
+	left: 3.88rem;
 	margin: 0;
 }
 
 .h-line {
-	width: 42.375rem;
+	width: 85%;
 	position: absolute;
 	left: 3.88rem;
 	top: 2.25rem;
 	border: 1px rgba(228.75, 229.02, 229.71, 0.50) solid;
 }
 
-.bottom-container img {
+.b-container {
+	display: flex;
+	width: 100%;
+	top: 5rem;
+	position: absolute;
+}
+
+.b-img {
+	position: relative;
+	left: 3.75rem;
+	top: 5rem;
 	width: 3.75rem;
 	height: 3.75rem;
-	position: absolute;
-	left: 3.75rem;
-	top: 9.775rem;
+}
+
+
+.b-img img {
+	width: 3.75rem;
+	height: 3.75rem;
 }
 
 .b-card-container {
-    position: absolute;
-    top: 4.775rem;
-    left: 9.25rem;
-	width: 45.2rem;
-    height: 10rem;
+	height: 10rem;
+	width: calc(100% - 10rem);
+	position: relative;
+	left: 6.25rem;
+	flex-shrink: 0;
 	overflow: hidden;
 }
 
-.testimonials {
+.t-header {
 	display: flex;
-	height: inherit;
-	height: 9rem;
-	position: absolute;
-	/* top: 3rem;
-	left: 2.87rem;
-	gap: 8px; */
-
-	animation: slide 20s linear infinite;
-	&:hover {
-		animation-play-state: paused;
-	}
-}
-
-.testimonials1 {
-	background: url('../images/T1.png') no-repeat;
-	width: 23.6rem;
-	height: 9rem;
-}
-
-.testimonials2 {
-	background: url('../images/T2.png') no-repeat;
-	width: 23.6rem;
-	height: 9rem;
-}
-
-.testimonials3 {
-	background: url('../images/T3.png') no-repeat;
-	width: 34rem;
-	height: 9rem;
-}
-
-@keyframes slide {
-	0% {
-		left: 2.87rem;
-	}
-
-	100% {
-		left: -100%;
-	}
+	width: 100%;
 }
